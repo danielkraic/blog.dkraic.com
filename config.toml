@@ -1,3 +1,9 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "http://blog.dkraic.com/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Linux blog"
+
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+builddrafts = false
+canonifyurls = true
