@@ -1,8 +1,11 @@
 +++
 date = "2015-09-16T20:54:52+02:00"
 title = "Ansible"
-tags = [ "dev", "ansible" ]
+tags = [ "dev", "ansible", "devops" ]
 +++
+
+Ansible is a free software platform for configuring and managing computers. It combines multi-node software deployment, ad hoc task execution, and configuration management. It manages nodes over SSH or PowerShell and requires Python (2.4 or later) to be installed on them. The system uses YAML to express reusable descriptions of systems.
+
 ### Installation
 
 #### Install from PPA

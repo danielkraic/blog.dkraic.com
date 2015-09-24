@@ -4,7 +4,7 @@ title = "Build blog with Hugo"
 tags = [ "dev", "hugo", "web" ]
 +++
 
-This blog is created with *Hugo* - static website engine written in Go ([link](http://www.gohugo.io)).
+This blog is created with [Hugo](http://www.gohugo.io) - static website engine written in [golang](https://golang.org/).
 
 
 ### Requirements
