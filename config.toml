@@ -1,9 +1,16 @@
-baseurl = "http://blog.dkraic.com/"
+baseurl = "http://blog.dkraic.com"
 languageCode = "en-us"
 title = "Linux blog"
-
+theme = "slim"
 contentdir = "content"
 layoutdir = "layouts"
 publishdir = "public"
 builddrafts = false
 canonifyurls = true
+
+[params]
+  Subtitle = "Random linux user's notes"
+  GithubID = "danielkraic"
+  Summary = false  # takes true or false
+  Content = false  # takes true or false
+  # if both are set to true, summary is shown.

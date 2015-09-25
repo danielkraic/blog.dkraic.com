@@ -30,14 +30,20 @@ hugo new site /path/to/site && cd /path/to/site
 hugo new post/first-post.md
 ```
 
-### Install simple-a theme
+### Install slim theme
 
 ```bash
-git clone https://github.com/danielkraic/simple-a.git themes/simple-a
+git clone https://github.com/zhe/hugo-theme-slim.git themes/slim
 ```
 
-### Run hugo
+### Run local hugo server
 
 ```bash
-hugo server --theme=simple-a --buildDrafts -w
+hugo server --buildDrafts -w
+```
+
+### Build site
+
+```bash
+hugo
 ```

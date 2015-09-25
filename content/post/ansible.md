@@ -241,7 +241,6 @@ ansible webserver -m lineinfile -a 'dest=/tmp/testfile line="192.168.1.99 foo.la
       service: name=httpd state=restarted
 ```
 
-
 ```yaml
 ---
 - hosts: webservers
