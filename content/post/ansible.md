@@ -138,25 +138,25 @@ ansible webservers -m service -a "name=httpd enabled=yes"
 
 ```bash
 # update repositories cache and install package
-ansible local -m apt -m "name=foo update_cache=yes"
+ansible local -m apt -a "name=foo update_cache=yes"
 # install latest version of package
-ansible local -m apt -m "name=foo state=latest"
+ansible local -m apt -a "name=foo state=latest"
 # install version '1.00' of package "foo"
-ansible local -m apt -m "name=foo=1.00 state=present"
+ansible local -m apt -a "name=foo=1.00 state=present"
 # remove package
-ansible local -m apt -m "name=foo state=absent"
+ansible local -m apt -a "name=foo state=absent"
 # equivalent of "apt-get update"
-ansible local -m apt -m "update_cache=yes"
+ansible local -m apt -a "update_cache=yes"
 # install local deb file
-ansible local -m apt -m "deb=/tmp/mypackage.deb"
+ansible local -m apt -a "deb=/tmp/mypackage.deb"
 ```
 
 #### [APT repository](http://docs.ansible.com/ansible/apt_repository_module.html)
 
 ```bash
-ansible local -m apt_repository -m "repo='deb http://archive.canonical.com/ubuntu hardy partner' state=present"
-ansible local -m apt_repository -m "repo='deb http://archive.canonical.com/ubuntu hardy partner' state=absent"
-ansible local -m apt_repository -m "repo='ppa:nginx/stable'"
+ansible local -m apt_repository -a "repo='deb http://archive.canonical.com/ubuntu hardy partner' state=present"
+ansible local -m apt_repository -a "repo='deb http://archive.canonical.com/ubuntu hardy partner' state=absent"
+ansible local -m apt_repository -a "repo='ppa:nginx/stable'"
 ```
 
 #### [Shell](http://docs.ansible.com/ansible/shell_module.html)
