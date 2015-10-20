@@ -1,2 +1,2 @@
 # blog.dkraic.com
-static site generated with hugo
+static site generated with [Hugo](http://www.gohugo.io)
