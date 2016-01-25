@@ -1,8 +1,7 @@
 +++
 date = "2015-11-12T19:41:10+01:00"
-draft = true
-title = "grep"
-
+title = "Grep"
+tags = [ "tools" ]
 +++
 
 # Grep
