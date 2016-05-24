@@ -6,6 +6,20 @@ tags = [ "dev", "cpp" ]
 
 CMake is tool for managing software build process using a compiler-independent method. It is designed to support directory hierarchies and applications that depend on multiple libraries.
 
+```bash
+cmake -DCMAKE_BUILD_TYPE=Debug ..
+```
+
+```bash
+export CC=/usr/bin/clang
+export CXX=/usr/bin/clang++
+cmake ..
+```
+
+```bash
+cmake -DCMAKE_C_COMPILER=/usr/bin/clang -DCMAKE_CXX_COMPILER=/usr/bin/clang++ ..
+```
+
 ### Example
 
 ```cmake
