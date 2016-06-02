@@ -1,4 +1,4 @@
-baseurl = "http://blog.dkraic.com"
+baseurl = "https://blog.dkraic.com"
 languageCode = "en-us"
 title = "Linux blog"
 theme = "slim"
