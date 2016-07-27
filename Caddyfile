@@ -1,0 +1,7 @@
+http://dkraic.som.sk {
+      redir https://dkraic.som.sk/
+}
+https://dkraic.som.sk {
+      root /var/www/blog/
+}
+

@@ -1,6 +1,6 @@
 +++
 date = "2015-09-24T10:33:23+02:00"
-title = "C++11 random engine"
+title = "CPP random engine"
 tags = [ "dev", "cpp", "cpp11", "random" ]
 +++
 

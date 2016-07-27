@@ -1,16 +1,23 @@
-baseurl = "https://blog.dkraic.com"
+baseurl = "https://dkraic.som.sk/"
 languageCode = "en-us"
 title = "Linux blog"
-theme = "slim"
+theme = "ghostwriter"
 contentdir = "content"
 layoutdir = "layouts"
 publishdir = "public"
 builddrafts = false
 canonifyurls = true
+Paginate = 30
 
 [params]
-  Subtitle = "Random linux user's notes"
-  GithubID = "danielkraic"
-  Summary = false  # takes true or false
-  Content = false  # takes true or false
-  # if both are set to true, summary is shown.
+  intro = true
+  headline = "Linux blog"
+  description = "Notes of random linux user"
+  twitter = "danielkraic"
+  github = "danielkraic"
+  facebook = "danielkraic"
+  gplus = "danielkraic"
+  linkedin = "danielkraic"
+
+[permalinks]
+  post = "/:year/:month/:day/:title/"

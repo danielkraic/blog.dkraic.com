@@ -1,3 +1,9 @@
++++
+date = "2016-05-27T10:34:00+02:00"
+title = "CPP variant"
+tags = [ "dev", "cpp" ]
++++
+
 # Variants
 * resembles union
 * able to store values of different types in a boost::variant variable
@@ -19,6 +25,7 @@ std::cout << boost::get<std::string>(v) << '\n';
 ### Example 1
 
 * before
+
 ```cpp
 class PersonId {
 public:
@@ -31,7 +38,9 @@ private:
   int m_johnDoeId;
 };
 ```
+
 * after
+
 ```cpp
 using PersonId = variant<std::string, int>;
 ```
@@ -39,6 +48,7 @@ using PersonId = variant<std::string, int>;
 ### Example 2
 
 * before
+
 ```cpp
 struct command {
   enum type { SET_SCORE, FIRE_MISSILE, FIRE_LASER, ROTATE };
@@ -49,7 +59,9 @@ struct set_score : commmand {
   double value;
 };
 ```
+
 * after
+
 ```cpp
 struct set_score {
   double value;
@@ -66,6 +78,7 @@ using command = variant<set_score, fire_missile, fire_laser, rotate>;
 ## boost::variant
 
 #### Creation and Assignment
+
 ```cpp
 // Default constructs to first alternative.
 boost::variant<std::string, int> v;
@@ -75,6 +88,7 @@ v = "Hello World";
 ```
 
 #### Extract a Value with get
+
 ```cpp
 void output(const boost::variant<std::string, int>& v)
 {
@@ -86,6 +100,7 @@ void output(const boost::variant<std::string, int>& v)
 ```
 
 #### Extract a Value with a visitor
+
 ```cpp
 struct OutputVisitor
 {
@@ -102,6 +117,7 @@ void output(const boost::variant<std::string, int>& v)
   boost::apply_visitor(OutputVisitor(), v);
 }
 ```
+
 ## std::variant
 
 #### Change 1: apply_visitor renamed
@@ -186,12 +202,14 @@ lvariant json_value {
 ```
 
 #### Creation of Alternatives
+
 ```cpp
 // Create a new command 'cmd' that sets the score to '10'.
 command cmd = command::set_score( 10 );
 ```
 
 #### Basic Pattern Matching
+
 ```cpp
 // Output a human readable string corresponding to the specified 'cmd'
 // command to the specified 'stream'.

@@ -1,3 +1,9 @@
++++
+date = "2016-05-27T10:33:23+02:00"
+title = "Boost DI"
+tags = [ "dev", "cpp", "boost" ]
++++
+
 # Boost::DI
 
 * C++14 header only Dependency Injection library with no dependencies
