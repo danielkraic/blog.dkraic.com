@@ -1,4 +1,4 @@
-baseurl = "https://dkraic.som.sk/"
+baseurl = "https://danielkraic.gitlab.io/blog/"
 languageCode = "en-us"
 title = "Linux blog"
 theme = "ghostwriter"
@@ -15,6 +15,7 @@ Paginate = 30
   description = "Notes of random linux user"
   twitter = "danielkraic"
   github = "danielkraic"
+  gitlab = "danielkraic"
   facebook = "danielkraic"
   gplus = "danielkraic"
   linkedin = "danielkraic"
