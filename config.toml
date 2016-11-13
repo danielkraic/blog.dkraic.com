@@ -1,4 +1,4 @@
-baseurl = "https://danielkraic.gitlab.io/blog/"
+baseurl = "https://danielkraic.github.io/"
 languageCode = "en-us"
 title = "Linux blog"
 theme = "ghostwriter"
